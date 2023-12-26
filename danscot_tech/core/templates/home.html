@@ -1,0 +1,248 @@
+
+{% load static %}
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Home Page</title>
+
+<style type="text/css">
+
+
+body {
+
+	margin: 0;
+
+	background-image: url("{% static 'bg.jpg' %}");
+
+	background-size: 100%;
+
+	background-color: #1A1A1A;
+
+	background-position: 50% 5%;
+
+}
+
+header li {
+
+	display: inline;
+
+}
+
+
+header ul {
+
+	position: absolute;
+
+	right: 0;
+
+	top: 10px;
+
+	font-size: 19px;
+
+	font-weight: bold;
+
+	margin: 0;
+}
+
+ul a {
+
+	text-decoration: none;
+
+	padding-right: 40px;
+
+	color: darkgray;
+
+}
+
+
+.logo {
+
+	position: absolute;
+
+	top: 10px;
+
+	text-decoration: none;
+
+	color: white;
+
+	padding-left: 8px;
+
+	font-size: 20px;
+
+	font-weight: bold;
+
+}
+
+.nav_bar {
+
+	border: 20px  #2A2A2A solid;
+
+	font-size: 19px;
+
+	font-weight: bold;
+}
+
+.first_info {
+
+	position: absolute;
+
+	left: 0;
+
+	top: 100px;
+
+	font-style: italic;
+
+	text-align: center;
+
+	margin: 20px;
+
+	font-size: 17px;
+
+	line-height: 34px;
+
+	color: white;
+}
+
+.second_info {
+
+	position: absolute;
+
+	right: 0;
+
+	top: 160px;
+
+	font-style: italic;
+
+	text-align: center;
+
+	margin: 20px;
+
+	font-size: 17px;
+
+	line-height: 34px;
+
+	color: white;
+}
+
+.third_info {
+
+	position: absolute;
+
+	bottom: 0;
+
+	text-align: center;
+
+	line-height: 34px;
+
+	margin: 20px;
+
+	color: white;
+
+	font-size: 17px;
+
+	font-style: italic;
+
+}
+
+.first_info h1 {
+
+	font-size: 19px;
+}
+
+li a:hover {
+
+	font-size: 21px;
+
+	text-decoration: underline;
+
+	color: blueviolet;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<header class="top_page">
+
+			<a href="/home" class="logo">Danscot Tech</a>
+
+			<nav class="nav_bar">
+
+				<ul>
+
+	              <li> <a href="/home">Home</a></li>
+
+	              <li> <a href="#">Projects</a></li>
+
+	              <li><a href="/downloader">Downloader</a></li>
+
+	              <li><a href="/login">Account</a></li>
+
+
+				</ul>
+
+			</nav>
+
+		</header>
+
+		<section class="first_info">
+
+			<h1>Welcome to Danscot Technologies</h1>
+
+			<p>A leading tech company specializing<br>
+
+				in programming solutions for clients<br>
+
+				worldwide.<br>
+
+			</p>
+
+		</section>
+
+		<section class="second_info">
+
+			<p>Our flagship product is our powerful and<br>
+
+				easy-to-use YouTube downloader .<br>
+
+				With our YouTube downloader, you can<br>
+
+				Easily download videos in high quality<br>
+
+				and watch them on your computer,<br>
+
+				phone, or tablet at your convenience.<br>
+			</p>
+
+		</section>
+
+		<section class="third_info">
+
+			<p>We are committed to creating innovative<br>
+
+				solutions that help our audience at<br>
+
+				Best , and our Downloader is just one<br>
+
+				example of how we are achieving this goal.<br>
+			</p>
+
+		</section>
+
+	</div>
+
+</body>
+
+</html>
